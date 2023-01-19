@@ -1,0 +1,15 @@
+devices:
+  DCSwitch:
+    connections:
+      cli:
+        ip: 10.122.20.66
+        protocol: ssh
+    os: iosxe
+    type: iosxe
+testbed:
+  credentials:
+    default:
+      password: 'C!sc0123'
+      #password: '%ASK{}'
+      username: 'admin'
+      #username: '%ASK{}'

@@ -1,0 +1,10 @@
+sites:
+  site1:
+    devices:
+      hostname: DCSwitch
+        user_vlan: 
+          legacy: 10
+          poolname: User
+        voice_vlan: 
+          legacy: 20
+          poolname: Voice
