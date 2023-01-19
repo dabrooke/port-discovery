@@ -1,6 +1,6 @@
-# Usage
+## Usage
 
-## Step 1 - Create your inventory.yaml file
+### Step 1 - Create your inventory.yaml file
 
 This file will be the basis for which PyATS will parse/gather outputs from so that the python script can generate the needed output CSV files.  This example shows two devices (switch1 and switch2) but it can collect as many (or little) as needed.
 
@@ -28,7 +28,7 @@ testbed:
 ```
 
 
-## Step 2 - Populate your mapping.yaml file
+### Step 2 - Populate your mapping.yaml file
 
 Fill out the mapping.yaml file with site-specific relavant inputs needed to associate legacy VLANs to new SDA IP Pool names to use for assignments.
 
@@ -48,11 +48,11 @@ sites:
           poolname: Video-Pool
          printer_vlan:
           legacy: 40
-          poolname: Printer-Pool
-	  
+          poolname: Printer-Pool	  
 ```
 
 ## Step 3 - Run the script
 
 ```
 python3 discovery.py site1
+```
