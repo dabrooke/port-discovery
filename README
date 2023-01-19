@@ -48,11 +48,11 @@ sites:
           poolname: Video-Pool
          printer_vlan:
           legacy: 40
-          poolname: Printer-Pool	  
+          poolname: Printer-Pool
+	  
 ```
 
-## Step 3 - Run the script
+### Step 3 - Run the script
 
 ```
 python3 discovery.py site1
-```
