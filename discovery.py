@@ -85,7 +85,7 @@ class Discover():
                 description = value['interfaceDescription']
                 vlan = value['vlan']
                 if str(voicevlan) == str(vlan):
-                    print('made it here! - VOICE VLAN')
+                    #print('made it here! - VOICE VLAN')
                     writetocsv = { 'Input': input,
                     'interfaceName': interface,
                     'interfaceDescription': description,
