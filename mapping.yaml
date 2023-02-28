@@ -1,0 +1,11 @@
+sites:
+  site1:
+    devices:
+      switch1:
+        ip_pools:
+          - voicevlan: 100
+            voiceippool: SDA-VOICE-Pool
+          - vlan2: 10
+            ippool2: SDA-Data-10
+          - vlan3: 963
+            ippool3: SDA-Data-963
