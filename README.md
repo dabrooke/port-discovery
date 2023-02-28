@@ -2,7 +2,7 @@
 
 ### Step 1 - Create your inventory.yaml file
 
-This file will be the basis for which PyATS will parse/gather outputs from so that the python script can generate the needed output CSV files.  This example shows two devices (switch1 and switch2) but it can collect as many (or little) as needed.
+This file will be the basis for which PyATS will parse/gather outputs from so that the python script can generate the needed output CSV files.  This example shows two devices (switch1 and switch2) but it can collect as many (or little) as needed.  Note that user/pass can be supplied directly in the file or can be gathered upon execution and not stored in the file.  Just edit/comment/uncomment as required.
 
 ```
 devices:
@@ -23,8 +23,10 @@ devices:
 testbed:
   credentials:
     default:
-      password: '%ASK{}'
-      username: '%ASK{}'
+      password: 'P@$$worD!'
+      username: 'admin'
+      #password: '%ASK{}'
+      #username: '%ASK{}'
 ```
 
 
