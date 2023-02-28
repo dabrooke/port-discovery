@@ -23,9 +23,9 @@ devices:
 testbed:
   credentials:
     default:
-      password: 'P@$$worD!'
-      username: 'admin'
+      password: 'C!sc0123'
       #password: '%ASK{}'
+      username: 'admin'
       #username: '%ASK{}'
 ```
 
