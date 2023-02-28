@@ -35,24 +35,19 @@ Fill out the mapping.yaml file with site-specific relavant inputs needed to asso
 ```
 sites:
   site1:
-     devices:
-      hostname: DCSwitch
-         user_vlan:
-          legacy: 10
-          poolname: User-Pool
-         voice_vlan:
-          legacy: 20
-          poolname: Voice-Pool
-         video_vlan:
-          legacy: 30
-          poolname: Video-Pool
-         printer_vlan:
-          legacy: 40
-          poolname: Printer-Pool
+    devices:
+      switch1:
+        ip_pools:
+          - voicevlan: 100
+            voiceippool: SDA-VOICE-Pool
+          - vlan2: 10
+            ippool2: SDA-Data-10
+          - vlan3: 963
+            ippool3: SDA-Data-963
 	  
 ```
 
 ### Step 3 - Run the script
 
 ```
-python3 discovery.py site1
+python3 discovery.py site1 switch1
